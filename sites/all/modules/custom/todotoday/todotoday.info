@@ -1,0 +1,17 @@
+name = Todotoday
+description = A todo list manager with a focus on todays tasks.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = todotoday
+dependencies[] = node
+features[features_api][] = api:2
+features[node][] = todotoday_task
+features_exclude[dependencies][date] = date
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][list] = list
+features_exclude[dependencies][options] = options
+features_exclude[field_base][field_status] = field_status
+features_exclude[field_base][field_due_date] = field_due_date
+features_exclude[field_instance][node-todotoday_task-field_due_date] = node-todotoday_task-field_due_date
+features_exclude[field_instance][node-todotoday_task-field_status] = node-todotoday_task-field_status
